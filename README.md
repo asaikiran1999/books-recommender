@@ -3,6 +3,7 @@
 
 <h2>Technologies used</h2>
 <h4>python, Google collab</h4>
+
 <h2>Concept used<h2>
 <h4>Collaborative filtering and Popularity based filtering</h4>
 
