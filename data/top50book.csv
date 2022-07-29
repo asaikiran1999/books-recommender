@@ -1,0 +1,51 @@
+,index,Book-Title,ratings-Count,average rating,Book-Author,Image-URL-M
+0,0,Harry Potter and the Prisoner of Azkaban (Book 3),428,5.852803738317757,J. K. Rowling,http://images.amazon.com/images/P/0439136350.01.MZZZZZZZ.jpg
+1,1,Harry Potter and the Goblet of Fire (Book 4),387,5.8242894056847545,J. K. Rowling,http://images.amazon.com/images/P/0439139597.01.MZZZZZZZ.jpg
+2,2,Harry Potter and the Sorcerer's Stone (Book 1),278,5.737410071942446,J. K. Rowling,http://images.amazon.com/images/P/0590353403.01.MZZZZZZZ.jpg
+3,3,Harry Potter and the Order of the Phoenix (Book 5),347,5.501440922190202,J. K. Rowling,http://images.amazon.com/images/P/043935806X.01.MZZZZZZZ.jpg
+4,4,Harry Potter and the Chamber of Secrets (Book 2),556,5.183453237410072,J. K. Rowling,http://images.amazon.com/images/P/0439064872.01.MZZZZZZZ.jpg
+5,5,The Hobbit : The Enchanting Prelude to The Lord of the Rings,281,5.00711743772242,J.R.R. TOLKIEN,http://images.amazon.com/images/P/0345339681.01.MZZZZZZZ.jpg
+6,6,"The Fellowship of the Ring (The Lord of the Rings, Part 1)",368,4.948369565217392,J.R.R. TOLKIEN,http://images.amazon.com/images/P/0345339703.01.MZZZZZZZ.jpg
+7,7,Harry Potter and the Sorcerer's Stone (Harry Potter (Paperback)),575,4.895652173913043,J. K. Rowling,http://images.amazon.com/images/P/059035342X.01.MZZZZZZZ.jpg
+8,8,"The Two Towers (The Lord of the Rings, Part 2)",260,4.880769230769231,J.R.R. TOLKIEN,http://images.amazon.com/images/P/0345339711.01.MZZZZZZZ.jpg
+9,9,To Kill a Mockingbird,510,4.7,Harper Lee,http://images.amazon.com/images/P/0446310786.01.MZZZZZZZ.jpg
+10,10,The Da Vinci Code,898,4.642538975501114,Dan Brown,http://images.amazon.com/images/P/0385504209.01.MZZZZZZZ.jpg
+11,11,The Five People You Meet in Heaven,430,4.551162790697674,Mitch Albom,http://images.amazon.com/images/P/0786868716.01.MZZZZZZZ.jpg
+12,12,The Catcher in the Rye,449,4.5456570155902005,J.D. Salinger,http://images.amazon.com/images/P/0316769487.01.MZZZZZZZ.jpg
+13,13,The Lovely Bones: A Novel,1295,4.468725868725869,Alice Sebold,http://images.amazon.com/images/P/0316666343.01.MZZZZZZZ.jpg
+14,14,1984,284,4.454225352112676,George Orwell,http://images.amazon.com/images/P/0451524934.01.MZZZZZZZ.jpg
+15,15,Prodigal Summer: A Novel,253,4.450592885375494,Barbara Kingsolver,http://images.amazon.com/images/P/0060959037.01.MZZZZZZZ.jpg
+16,16,Neverwhere,265,4.449056603773585,Neil Gaiman,http://images.amazon.com/images/P/0380789019.01.MZZZZZZZ.jpg
+17,17,The Secret Life of Bees,774,4.447028423772609,Sue Monk Kidd,http://images.amazon.com/images/P/0142001740.01.MZZZZZZZ.jpg
+18,18,Stupid White Men ...and Other Sorry Excuses for the State of the Nation!,283,4.3568904593639575,Michael Moore,http://images.amazon.com/images/P/0060392452.01.MZZZZZZZ.jpg
+19,19,"Tuesdays with Morrie: An Old Man, a Young Man, and Life's Greatest Lesson",493,4.354969574036511,MITCH ALBOM,http://images.amazon.com/images/P/0385484518.01.MZZZZZZZ.jpg
+20,20,The Red Tent (Bestselling Backlist),723,4.334716459197787,Anita Diamant,http://images.amazon.com/images/P/0312195516.01.MZZZZZZZ.jpg
+21,21,The Hitchhiker's Guide to the Galaxy,268,4.3283582089552235,Douglas Adams,http://images.amazon.com/images/P/0671461494.01.MZZZZZZZ.jpg
+22,22,Nickel and Dimed: On (Not) Getting By in America,335,4.28955223880597,Barbara Ehrenreich,http://images.amazon.com/images/P/0805063897.01.MZZZZZZZ.jpg
+23,23,Into the Wild,252,4.273809523809524,Jon Krakauer,http://images.amazon.com/images/P/0385486804.01.MZZZZZZZ.jpg
+24,24,Fahrenheit 451,409,4.264058679706602,Ray Bradbury,http://images.amazon.com/images/P/3257208626.01.MZZZZZZZ.jpg
+25,25,Girl with a Pearl Earring,526,4.218631178707224,Tracy Chevalier,http://images.amazon.com/images/P/0452282152.01.MZZZZZZZ.jpg
+26,26,Outlander,283,4.173144876325089,DIANA GABALDON,http://images.amazon.com/images/P/0440222915.01.MZZZZZZZ.jpg
+27,27,Where the Heart Is (Oprah's Book Club (Paperback)),585,4.105982905982906,Billie Letts,http://images.amazon.com/images/P/0446672211.01.MZZZZZZZ.jpg
+28,28,Seabiscuit: An American Legend,275,4.098181818181819,LAURA HILLENBRAND,http://images.amazon.com/images/P/0449005615.01.MZZZZZZZ.jpg
+29,29,Life of Pi,664,4.088855421686747,Yann Martel,http://images.amazon.com/images/P/0151008116.01.MZZZZZZZ.jpg
+30,30,The Bean Trees,389,4.087403598971722,Barbara Kingsolver,http://images.amazon.com/images/P/0060915544.01.MZZZZZZZ.jpg
+31,31,"A Child Called \It\"": One Child's Courage to Survive""",265,4.086792452830188,Dave Pelzer,http://images.amazon.com/images/P/1558743669.01.MZZZZZZZ.jpg
+32,32,ANGELA'S ASHES,279,4.075268817204301,Frank McCourt,http://images.amazon.com/images/P/0684874350.01.MZZZZZZZ.jpg
+33,33,Good in Bed,490,4.055102040816327,Jennifer Weiner,http://images.amazon.com/images/P/0743418174.01.MZZZZZZZ.jpg
+34,34,Fast Food Nation: The Dark Side of the All-American Meal,321,4.037383177570093,Eric Schlosser,http://images.amazon.com/images/P/0060938455.01.MZZZZZZZ.jpg
+35,35,American Gods,302,4.006622516556291,Neil Gaiman,http://images.amazon.com/images/P/0380789035.01.MZZZZZZZ.jpg
+36,36,Skipping Christmas,322,4.0062111801242235,JOHN GRISHAM,http://images.amazon.com/images/P/0385505833.01.MZZZZZZZ.jpg
+37,37,Left Behind: A Novel of the Earth's Last Days (Left Behind No. 1),318,4.00314465408805,Tim Lahaye,http://images.amazon.com/images/P/0842329129.01.MZZZZZZZ.jpg
+38,38,"The Golden Compass (His Dark Materials, Book 1)",336,4.0,PHILIP PULLMAN,http://images.amazon.com/images/P/037582345X.01.MZZZZZZZ.jpg
+39,39,The Color Purple,314,3.964968152866242,Alice Walker,http://images.amazon.com/images/P/0671617028.01.MZZZZZZZ.jpg
+40,40,Silence of the Lambs,256,3.9609375,Thomas Harris,http://images.amazon.com/images/P/0312924585.01.MZZZZZZZ.jpg
+41,41,About a Boy,262,3.900763358778626,Nick Hornby,http://images.amazon.com/images/P/1573227331.01.MZZZZZZZ.jpg
+42,42,Seven Up (A Stephanie Plum Novel),278,3.8884892086330933,Janet Evanovich,http://images.amazon.com/images/P/0312265840.01.MZZZZZZZ.jpg
+43,43,The Alchemist: A Fable About Following Your Dream,266,3.8759398496240602,Paulo Coelho,http://images.amazon.com/images/P/0062502174.01.MZZZZZZZ.jpg
+44,44,Hard Eight : A Stephanie Plum Novel (A Stephanie Plum Novel),269,3.825278810408922,Janet Evanovich,http://images.amazon.com/images/P/0312983867.01.MZZZZZZZ.jpg
+45,45,Suzanne's Diary for Nicholas,457,3.8205689277899344,James Patterson,http://images.amazon.com/images/P/0316969443.01.MZZZZZZZ.jpg
+46,46,Lord of the Flies,259,3.8185328185328187,William Gerald Golding,http://images.amazon.com/images/P/0399501487.01.MZZZZZZZ.jpg
+47,47,A Prayer for Owen Meany,413,3.7966101694915255,John Irving,http://images.amazon.com/images/P/0345361792.01.MZZZZZZZ.jpg
+48,48,"The Vampire Lestat (Vampire Chronicles, Book II)",301,3.777408637873754,ANNE RICE,http://images.amazon.com/images/P/0345313860.01.MZZZZZZZ.jpg
+49,49,White Oleander : A Novel (Oprah's Book Club),356,3.7724719101123596,Janet Fitch,http://images.amazon.com/images/P/0316284955.01.MZZZZZZZ.jpg
