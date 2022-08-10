@@ -125,7 +125,6 @@ elif page == "selected book recommender":
 				image_iterators = paginator("Select next page", r)
 				indices_on_pages, images_on_pages = map(list, zip(*image_iterators))
 				st.image(images_on_pages, width=200)
-			raise Exception('This is the exception you expect to handle')
 		except Exception as error:
 			st.text('Recommended book is not found in our database')
 		
