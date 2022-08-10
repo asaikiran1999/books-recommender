@@ -3,6 +3,7 @@
 
 <h2>Technologies used</h2>
 <h4>python, Google collab</h4>
-<h4>Concept used:Collaborative filtering and Popularity based filtering<h4>
+<h2>Concept used:</h2>
+<h4>Collaborative filtering and Popularity based filtering<h4>
 
 <h1> <a href="https://asaikiran1999-books-recommender-app-t8g23r.streamlitapp.com/">click here</a>to view my working model</h1>
