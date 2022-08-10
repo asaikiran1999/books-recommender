@@ -116,7 +116,12 @@ elif page == "selected book recommender":
 		    items.append(list(temp_df.drop_duplicates('Book-Title')['Image-URL-M']))
 		  return items
 		r=[]
-		y=list(recommend(input))
+		try:
+			y=list(recommend(input))
+			raise Exception('This is the exception you expect to handle')
+		except Exception as error:
+			print('Recommended book is not found in our database')
+
 		for i in range(5):
 			r.append(y[i][0])
 		image_iterators = paginator("Select next page", r)
