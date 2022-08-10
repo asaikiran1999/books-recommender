@@ -118,12 +118,17 @@ elif page == "selected book recommender":
 		r=[]
 		try:
 			y=list(recommend(input))
+			for i in range(5):
+				r.append(y[i][0])
+		        image_iterators = paginator("Select next page", r)
+		        indices_on_pages, images_on_pages = map(list, zip(*image_iterators))
+		        st.image(images_on_pages, width=200)
 			raise Exception('This is the exception you expect to handle')
 		except Exception as error:
-			print('Recommended book is not found in our database')
+			st.text('Recommended book is not found in our database')
 
-		for i in range(5):
-			r.append(y[i][0])
-		image_iterators = paginator("Select next page", r)
-		indices_on_pages, images_on_pages = map(list, zip(*image_iterators))
-		st.image(images_on_pages, width=200)
+		#for i in range(5):
+			#r.append(y[i][0])
+		#image_iterators = paginator("Select next page", r)
+		#indices_on_pages, images_on_pages = map(list, zip(*image_iterators))
+		#st.image(images_on_pages, width=200)
