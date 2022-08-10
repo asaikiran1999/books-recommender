@@ -98,16 +98,6 @@ elif page == "selected book recommender":
 	pivot = filtered_famous.pivot_table(index ='Book-Title',columns='User-ID',values='Book-Rating')
 	pivot.fillna(0,inplace=True)
 	similarity_scores = cosine_similarity(pivot)
-
-	def recommend(book_name):
-	  index = np.where(pivot.index == book_name)[0][0]
-	  similar_items =sorted(list(enumerate(similarity_scores[index])),key=lambda x:x[1],reverse=True)[1:6]
-	  items=[]
-	  for i in similar_items:
-	    #print(pivot.index[i[0]])
-	    temp_df = books[books['Book-Title']==pivot.index[i[0]]] 
-	    items.append(list(temp_df.drop_duplicates('Book-Title')['Image-URL-M']))
-	  return items
 	input = st.text_input("Book_Name","")
 	st.text('most search books are :')
 	st.text("Harry Potter and the Sorcerer's Stone (Book 1)")
@@ -116,6 +106,15 @@ elif page == "selected book recommender":
 	st.text('Girl with a Pearl Earring')
 	st.text('About a Boy')
 	if st.button('recommend'):
+		def recommend(book_name):
+		  index = np.where(pivot.index == book_name)[0][0]
+		  similar_items =sorted(list(enumerate(similarity_scores[index])),key=lambda x:x[1],reverse=True)[1:6]
+		  items=[]
+		  for i in similar_items:
+		    #print(pivot.index[i[0]])
+		    temp_df = books[books['Book-Title']==pivot.index[i[0]]] 
+		    items.append(list(temp_df.drop_duplicates('Book-Title')['Image-URL-M']))
+		  return items
 		r=[]
 		y=list(recommend(input))
 		for i in range(5):
