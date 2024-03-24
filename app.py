@@ -5,6 +5,11 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
 st.title('Books recommender')
+
+import streamlit as st
+import pandas as pd 
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
 html_temp = """
 <div style = 'background_color:tomato ; padding;10px'>
 <h2 style = "color : white; text-align :center;">Books recommender</h2>
