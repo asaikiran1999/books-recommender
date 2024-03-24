@@ -14,7 +14,6 @@ html_temp = """
 <div style = 'background_color:tomato ; padding;10px'>
 <h2 style = "color : white; text-align :center;">Books recommender</h2>
 </div>
-https://github.com/asaikiran1999/books-recommender/blob/main/data/books1.csv
 """
 st.markdown(html_temp,unsafe_allow_html= True)
 books1 = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/blob/main/data/books1.csv")
