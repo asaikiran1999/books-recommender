@@ -16,13 +16,13 @@ html_temp = """
 </div>
 """
 st.markdown(html_temp,unsafe_allow_html= True)
-books1 = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/books1.csv",ignore_index=True)
-books2 = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/books2.csv",ignore_index=True)
-books3 = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/books3.csv",ignore_index=True)
-books4 = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/books4.csv",ignore_index=True)
-books1= books1.append(books2)
-books1= books1.append(books3)
-books1= books1.append(books4)
+books1 = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/books1.csv")
+books2 = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/books2.csv")
+books3 = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/books3.csv")
+books4 = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/books4.csv")
+books1= books1.append(books2,ignore_index=True)
+books1= books1.append(books3,ignore_index=True)
+books1= books1.append(books4,ignore_index=True)
 books = books1.copy()
 page = st.selectbox("Choose your page", ["Top 50 book recommendation", "selected book recommender"])
 def paginator(label, items, items_per_page=10, on_sidebar=True):
