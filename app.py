@@ -78,17 +78,17 @@ def recommend(book_name):
     temp_df = books[books['Book-Title']==pivot.index[i[0]]] 
     items.append(list(temp_df.drop_duplicates('Book-Title')['Image-URL-M']))
   return items
-input = st.text_input("Book_Name","")
+user_input = st.text_input("Book_Name","")
 st.text('most search books are :')
 st.text("Harry Potter and the Sorcerer's Stone (Book 1)")
 st.text('The Da Vinci Code')
 st.text('The Secret Life of Bees')
 st.text('Girl with a Pearl Earring')
 st.text('About a Boy')
-recommended_books = recommend(input)
+recommended_books = recommend(user_input)
 if st.button('recommend'):
-	for book_image_url in recommended_books:
-		st.image(book_image_url, width=200)
-		book_title = books[books['Image-URL-M'] == book_image_url]['Book-Title'].values[0]
-		st.write(book_title)
+    for book_image_url in recommended_books:
+        st.image(book_image_url, width=200)
+        book_title = books[books['Image-URL-M'] == book_image_url]['Book-Title'].values[0]
+        st.write(book_title)
 
