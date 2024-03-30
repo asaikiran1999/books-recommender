@@ -78,17 +78,19 @@ def paginator(label, items, items_per_page=10, on_sidebar=True):
 	return itertools.islice(enumerate(items), min_index, max_index)
 
 if page == "Top 50 book recommendation":
-	items2 = []
-	items3 = []
-	x =  pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/top50book.csv")
-	for i in range(50):
-		items2.append(x['Image-URL-M'][i])
-		items3.append(x['Book-Title'][i])
-	i=0
-	
-	image_iterator = paginator("Select next page", items2)
-	indices_on_page, images_on_page = map(list, zip(*image_iterator))
-	st.image(images_on_page, width=200)
+    items2 = []
+    items3 = []
+    x = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/top50book.csv")
+    for i in range(50):
+        items2.append(x['Image-URL-M'][i])
+        items3.append(x['Book-Title'][i])
+
+    image_iterator = paginator("Select next page", zip(items2, items3))
+    indices_on_page, images_and_titles_on_page = map(list, zip(*image_iterator))
+
+    for image_url, book_title in images_and_titles_on_page:
+        st.image(image_url, width=200)
+        st.write(book_title)
 	
 elif page == "selected book recommender":
 	users= pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/Users.csv")
@@ -121,9 +123,9 @@ elif page == "selected book recommender":
 	st.text('Girl with a Pearl Earring')
 	st.text('About a Boy')
         recommended_books = recommend(input)
-	if st.button('recommend'):
-		for book_image_url in recommended_books:
-			st.image(book_image_url, width=200)
-			book_title = books[books['Image-URL-M'] == book_image_url]['Book-Title'].values[0]
-			st.write(book_title)
+if st.button('recommend'):
+	for book_image_url in recommended_books:
+		st.image(book_image_url, width=200)
+		book_title = books[books['Image-URL-M'] == book_image_url]['Book-Title'].values[0]
+		st.write(book_title)
 
