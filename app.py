@@ -88,7 +88,7 @@ st.text('About a Boy')
 recommended_books = recommend(input)
 if st.button('recommend'):
 	for book_image_url in recommended_books:
-	      st.image(book_image_url, width=200)
-	      book_title = books[books['Image-URL-M'] == book_image_url]['Book-Title'].values[0]
-	      st.write(book_title)
+		st.image(book_image_url, width=200)
+		book_title = books[books['Image-URL-M'] == book_image_url]['Book-Title'].values[0]
+		st.write(book_title)
 
