@@ -48,9 +48,8 @@ if page == "Top 50 book recommendation":
 	for i in range(50):
                 items2.append(x['Image-URL-M'][i])
                 items3.append(x['Book-Title'][i])
-
-        image_iterator = paginator("Select next page", zip(items2, items3))
-        indices_on_page, images_and_titles_on_page = map(list, zip(*image_iterator))
+    image_iterator = paginator("Select next page", zip(items2, items3))
+    indices_on_page, images_and_titles_on_page = map(list, zip(*image_iterator))
 
 	for image_url, book_title in images_and_titles_on_page:
 		st.image(image_url, width=200)
