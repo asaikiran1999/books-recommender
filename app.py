@@ -53,22 +53,22 @@ image_iterator = paginator("Select next page", zip(items2, items3))
 indices_on_page, images_and_titles_on_page = map(list, zip(*image_iterator))
 
 for image_url, book_title in images_and_titles_on_page:
-st.image(image_url, width=200)
-st.write(book_title)
+	st.image(image_url, width=200)
+	st.write(book_title)
 
 elif page == "selected book recommender":
-users= pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/Users.csv")
-ratings = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/Ratings.csv")
-ratings_and_books = ratings.merge(books,on='ISBN')
-x=ratings_and_books.groupby('User-ID').count()['Book-Rating']>200
-best_users=x[x].index
-filtered_ratings =ratings_and_books[ratings_and_books['User-ID'].isin(best_users)]
-y=filtered_ratings.groupby('Book-Title').count()['Book-Rating']>=50
-famous_books=y[y].index
-filtered_famous = filtered_ratings[filtered_ratings['Book-Title'].isin(famous_books)]
-pivot = filtered_famous.pivot_table(index ='Book-Title',columns='User-ID',values='Book-Rating')
-pivot.fillna(0,inplace=True)
-similarity_scores = cosine_similarity(pivot)
+	users= pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/Users.csv")
+	ratings = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/Ratings.csv")
+	ratings_and_books = ratings.merge(books,on='ISBN')
+	x=ratings_and_books.groupby('User-ID').count()['Book-Rating']>200
+	best_users=x[x].index
+	filtered_ratings =ratings_and_books[ratings_and_books['User-ID'].isin(best_users)]
+	y=filtered_ratings.groupby('Book-Title').count()['Book-Rating']>=50
+	famous_books=y[y].index
+	filtered_famous = filtered_ratings[filtered_ratings['Book-Title'].isin(famous_books)]
+	pivot = filtered_famous.pivot_table(index ='Book-Title',columns='User-ID',values='Book-Rating')
+	pivot.fillna(0,inplace=True)
+	similarity_scores = cosine_similarity(pivot)
 
 def recommend(book_name):
   index = np.where(pivot.index == book_name)[0][0]
