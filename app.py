@@ -16,6 +16,11 @@ books = pd.concat([books1, books2, books3, books4], ignore_index=True)
 # Function to recommend books
 def recommend(book_name, pivot):
     index = np.where(pivot.index == book_name)[0][0]
+    if len(index) == 0:
+        st.write("Book not found, please try another book name.")
+        return []
+    
+    index = index[0]
     similarity_scores = cosine_similarity(pivot)
     similar_items = sorted(list(enumerate(similarity_scores[index])), key=lambda x: x[1], reverse=True)[1:6]
     items = []
