@@ -84,8 +84,11 @@ elif page == "selected book recommender":
 	st.text('About a Boy')
 	
 	if st.button('Recommend'):
-	    recommended_books = recommend(user_input, pivot)
-	    for book_image_url in recommended_books:
-	        st.image(book_image_url, width=200)
-	        book_title = books[books['Image-URL-M'] == book_image_url]['Book-Title'].values[0]
-	        st.write(book_title)
+		recommended_books = recommend(user_input, pivot)
+                for book_image_urls in recommended_books:
+			for book_image_url in book_image_urls:
+				st.image(book_image_url, width=200)
+				temp_df = books[books['Image-URL-M'] == book_image_url]
+				if not temp_df.empty:
+					book_title = temp_df['Book-Title'].values[0]
+					st.write(book_title)
