@@ -22,38 +22,6 @@ books1 = pd.concat([books1, books4], ignore_index=True)
 books = books1.copy()
 page = st.selectbox("Choose your page", ["Top 50 book recommendation", "selected book recommender"])
 def paginator(label, items, items_per_page=10, on_sidebar=True):
-"""Lets the user paginate a set of items.
-Parameters
-----------
-label : str
-    The label to display over the pagination widget.
-items : Iterator[Any]
-    The items to display in the paginator.
-items_per_page: int
-    The number of items to display per page.
-on_sidebar: bool
-    Whether to display the paginator widget on the sidebar.
-    
-Returns
--------
-Iterator[Tuple[int, Any]]
-    An iterator over *only the items on that page*, including
-    the item's index.
-Example
--------
-This shows how to display a few pages of fruit.
->>> fruit_list = [
-...     'Kiwifruit', 'Honeydew', 'Cherry', 'Honeyberry', 'Pear',
-...     'Apple', 'Nectarine', 'Soursop', 'Pineapple', 'Satsuma',
-...     'Fig', 'Huckleberry', 'Coconut', 'Plantain', 'Jujube',
-...     'Guava', 'Clementine', 'Grape', 'Tayberry', 'Salak',
-...     'Raspberry', 'Loquat', 'Nance', 'Peach', 'Akee'
-... ]
-...
-... for i, fruit in paginator("Select a fruit page", fruit_list):
-...     st.write('%s. **%s**' % (i, fruit))
-"""
-
 # Figure out where to display the paginator
 if on_sidebar:
     location = st.sidebar.empty()
