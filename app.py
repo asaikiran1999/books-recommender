@@ -7,7 +7,6 @@ st.title('Books recommender')
 
 html_temp = """<div style='background_color: tomato; padding: 10px'><h2 style='color: white; text-align: center;'>Books recommender</h2></div>"""
 st.markdown(html_temp, unsafe_allow_html=True)
-page = st.selectbox("Choose your page", ["Top 50 book recommendation", "selected book recommender"])
 # Load data
 books1 = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/books1.csv")
 books2 = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/books2.csv")
@@ -24,6 +23,13 @@ def recommend(book_name, pivot):
         temp_df = books[books['Book-Title'] == pivot.index[i[0]]]
         items.append(list(temp_df.drop_duplicates('Book-Title')['Image-URL-M']))
     return items
+page = st.selectbox("Choose your page", ["Top 50 book recommendation", "selected book recommender"])
+def paginator(label, items, items_per_page=10, on_sidebar=True):
+# Figure out where to display the paginator
+	if on_sidebar:
+	    location = st.sidebar.empty()
+	else:
+	    location = st.empty()
 
 # Load data for selected book recommender
 users = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/Users.csv")
