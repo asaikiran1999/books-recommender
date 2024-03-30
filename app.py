@@ -120,12 +120,10 @@ elif page == "selected book recommender":
 	st.text('The Secret Life of Bees')
 	st.text('Girl with a Pearl Earring')
 	st.text('About a Boy')
-	
 	if st.button('recommend'):
-		r=[]
-		y=list(recommend(input))
-		for i in range(5):
-			r.append(y[i][0])
-		image_iterators = paginator("Select next page", r)
-		indices_on_pages, images_on_pages = map(list, zip(*image_iterators))
-		st.image(images_on_pages, width=200)
+		recommended_books = recommend(input)
+        for book_image_url in recommended_books:
+		st.image(book_image_url, width=200)
+                book_title = books[books['Image-URL-M'] == book_image_url]['Book-Title'].values[0]
+                st.write(book_title)
+
