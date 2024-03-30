@@ -52,9 +52,9 @@ if page == "Top 50 book recommendation":
 image_iterator = paginator("Select next page", zip(items2, items3))
 indices_on_page, images_and_titles_on_page = map(list, zip(*image_iterator))
 
-for image_url, book_title in images_and_titles_on_page:
-	st.image(image_url, width=200)
-	st.write(book_title)
+	for image_url, book_title in images_and_titles_on_page:
+		st.image(image_url, width=200)
+		st.write(book_title)
 
 elif page == "selected book recommender":
 	users= pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/Users.csv")
