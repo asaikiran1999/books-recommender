@@ -19,7 +19,7 @@ def recommend(book_name, pivot):
     if index == -1:
         st.write("Book not found, please try another book name.")
         return []
-    index = index[0]
+    # index = index[0]
     similarity_scores = cosine_similarity(pivot)
     similar_items = sorted(list(enumerate(similarity_scores[index])), key=lambda x: x[1], reverse=True)[1:6]
     items = []
