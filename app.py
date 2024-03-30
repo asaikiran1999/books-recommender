@@ -46,8 +46,8 @@ if page == "Top 50 book recommendation":
 	items3 = []
 	x = pd.read_csv("https://raw.githubusercontent.com/asaikiran1999/books-recommender/main/data/top50book.csv")
 	for i in range(50):
-		items2.append(x['Image-URL-M'][i])
-	        items3.append(x['Book-Title'][i])
+                items2.append(x['Image-URL-M'][i])
+                items3.append(x['Book-Title'][i])
 
 image_iterator = paginator("Select next page", zip(items2, items3))
 indices_on_page, images_and_titles_on_page = map(list, zip(*image_iterator))
