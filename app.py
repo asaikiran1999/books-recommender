@@ -91,3 +91,11 @@ elif page == "selected book recommender":
                                if not temp_df.empty:
                                         book_title = temp_df['Book-Title'].values[0]
                                         st.write(book_title)
+st.write("""
+	<script>
+	function keepAlive() {
+        fetch(window.location.href, { mode: 'no-cors' });
+	}
+	setInterval(keepAlive, 5 * 60 * 1000); // Ping every 5 minutes
+	</script>
+	""")
